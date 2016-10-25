@@ -1,0 +1,1 @@
+$(".count").each(function(){$(this).prop("Counter",0).animate({Counter:$(this).text()},{duration:2500,easing:"swing",step:function(t){$(this).text(Math.ceil(t))}})}),$(document).ready(function($){$(".ans").hide(),$(".qanda").find(".question").click(function(){$(this).next().slideToggle(200),$("ans").not($(this).next()).slideUp(150)})});
