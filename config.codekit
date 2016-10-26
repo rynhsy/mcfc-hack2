@@ -245,6 +245,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/img\/video-poster.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 160741,
+		"inputAbbreviatedPath": "\/img\/video-poster.jpg",
+		"outputAbbreviatedPath": "\/img\/video-poster.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/img\/where-academy.jpg": {
 		"fileType": 16384,
 		"ignore": 0,

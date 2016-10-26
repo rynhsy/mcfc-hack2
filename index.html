@@ -221,19 +221,20 @@
   </div>
 </section><!-- .who -->
 
-<section class="recap">
-  <div class="recap-text-outer">
-    <h1>Recap</h1>
-    <div class="recap-text">
-      <p>Here's what happened at the last #HACKMCFC, held in July 2016</p>
+<section class="recap data-wrap">
+  <div class="data">
+    <div class="content extra-pad">
+      <h2>Recap</h2>
+      <p class="line-wrap">Here's what happened at the last #HACKMCFC, held in July 2016</p>
+
+      <video id="my-video" class="video-js vjs-16-9" controls preload="auto" poster="img/video-poster.jpg" data-setup="{'fluid': true}">
+        <source src="https://dl.dropboxusercontent.com/u/6340770/Hackathon-720.mp4" type='video/mp4'>
+        <!--<source src="MY_VIDEO.webm" type='video/webm'>-->
+        <p class="vjs-no-js">To view this video please enable JavaScript, and consider upgrading to a web browser that supports HTML5 video</p>
+      </video>
     </div>
-    <video id="my-video" class="video-js vjs-16-9" controls preload="auto" poster="MY_VIDEO_POSTER.jpg" data-setup="{'fluid': true}">
-      <source src="https://dl.dropboxusercontent.com/u/6340770/Hackathon-720.mp4" type='video/mp4'>
-      <!--<source src="MY_VIDEO.webm" type='video/webm'>-->
-      <p class="vjs-no-js">To view this video please enable JavaScript, and consider upgrading to a web browser that supports HTML5 video</p>
-    </video>
-  </div>
-</section><!-- .who -->
+  </div><!-- .data -->
+</section><!-- .data-wrap -->
 
 <section class="faq">
   <div class="faq-text-outer">
@@ -405,12 +406,12 @@
     <div class="partners-logos">
       <h4>Supported by</h4>
       <ul class="logos">
-        <li class="sap">
+        <!--<li class="sap">
           <a href="https://go.sap.com/" target="_blank">
             <img src="img/part-sap.png" alt="SAP" />
           </a>
         </li>
-        <!--<li class="opta">
+        <li class="opta">
           <a href="http://www.optasportspro.com/" target="_blank">
             <img src="img/part-opta.png" alt="Opta Pro" />
           </a>
