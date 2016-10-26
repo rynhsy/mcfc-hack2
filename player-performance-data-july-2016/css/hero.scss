@@ -182,55 +182,62 @@
 .code-of-conduct .data-wrap {
 	margin-top: 150px;
 }
-.hero-wrap {
-	max-width: 1250px;
-	margin: 0 auto;
-}
-.hero {
-  margin: 95px auto 0;
+.clockdiv {
+	font-family: $gotham;
+	font-size: 90px;
+  width: 100%;
+  padding: 111px 15px 60px;
+  margin: 0 auto;
 	text-rendering: optimizeLegibility;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
-  background: linear-gradient(
-      rgba(30, 30, 30, .3) 0%,
-      rgba(0, 0, 0, .5) 40%
-    ),
-    url("../img/fan-hack-image.jpg") no-repeat 18% top;
-  background-size: cover;
-	.hero-lines {
-		background-image: url("../img/repeater.png");
-		background-size: 5px 5px;
-	}
+  @include clearfix;
   @media (min-width: $tablet) {
-	  margin: 120px 25px 0;
-	  background: linear-gradient(
-	      rgba(30, 30, 30, .3) 0%,
-	      rgba(0, 0, 0, .5) 40%
-	    ),
-	    url("../img/fan-hack-image.jpg") no-repeat left bottom;
-	  background-size: cover;
+    font-size: 140px;
+    max-width: 1200px;
+    padding-top: 195px;
+    padding-bottom: 90px;
   }
   @media (min-width: $desktop) {
-	  background: linear-gradient(
-	      rgba(30, 30, 30, .3) 0%,
-	      rgba(0, 0, 0, .5) 40%
-	    ),
-	    url("../img/fan-hack-image.jpg") no-repeat left bottom;
-	  background-size: cover;
+    font-size: 160px;
+    padding-left: 50px;
+    padding-right: 50px;
   }
-  .content {
-	  padding-top: 111px;
-		padding-bottom: 50px;
-	  @media (min-width: $tablet) {
-	    padding-top: 195px;
-	    padding-bottom: 90px;
-	  }
-	  @media (min-width: $desktop) {
-	    padding-left: 50px;
-	    padding-right: 50px;
-	  }
-		@include clearfix;
-	}
+  .big-no {
+    letter-spacing: -.03em;
+  }
+  .clock-part {
+	  float: left;
+    width: 50%;
+    @media (min-width: $smtablet) {
+      border-right: $stroke 1px solid;
+    	text-align: center;
+      &:nth-child(1) {
+        width: 21%;
+      }
+      &:nth-child(2) {
+        width: 26%;
+      }
+      &:nth-child(3) {
+        width: 26%;
+      }
+      &:nth-child(4) {
+        border-right: 0;
+        width: 27%;
+      }
+    }
+  }
+  .smalltext {
+  	font-size: 18px;
+    color: $midgrey;
+    text-transform: uppercase;
+    margin-bottom: .9em;
+    margin-top: -.6em;
+    @media (min-width: $tablet) {
+      font-size: 20px;
+      padding-top: 5px;
+    }
+  }
 }
 #countdown {
 	font-family: $gotham;

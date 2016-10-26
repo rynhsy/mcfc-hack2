@@ -1,0 +1,868 @@
+$blue:				#C7EDFF;
+$yellow:			#FFC758;
+$textcol:			#2f3133;
+$black:				#2a2c2e;
+$darkgrey:		#313335;
+$midgrey:			#828385;
+$stroke:      #DADBDB;
+$lightgrey:		#ecedf0;
+$gotham:			"Gotham Cond SSm A","Gotham Cond SSm B",Impact;
+$iphone5:     320px;
+$smtablet:    600px;
+$tablet: 			768px;
+$desktop:			991px;
+$bigscreen:		1200px;
+
+@mixin clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+@import "reset";
+
+body {
+	height: 100%;
+	background: #fff;
+	text-align: left;
+	color: $textcol;
+	line-height: 1.5;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+a {
+  transition: color .2s;
+  color: $textcol;
+}
+abbr {
+  border-bottom: 1px $midgrey dotted;
+}
+/* Type */
+h1, h2, h3, h4 {
+	font-family: $gotham;
+	font-weight: 600;
+	text-transform: uppercase;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+h1 {
+  font-size: 72px;
+	letter-spacing: -.005em;
+	margin-bottom: .3em;
+	line-height: .9;
+  @media (max-width: $iphone5) {
+    font-size: 60px;
+  }
+	@media (min-width: $tablet) {
+    font-size: 90px;
+  	letter-spacing: -.015em;
+  }
+}
+h1 a {
+  text-decoration: none;
+}
+h2 {
+  font-size: 50px;
+	letter-spacing: -.005em;
+	padding-top: .8em;
+	margin-bottom: .3em;
+  line-height: 1;
+	@media (min-width: $tablet) {
+    font-size: 60px;
+  }
+}
+.where h2 {
+  padding-top: .6em;
+	margin-bottom: 0;
+}
+h3 {
+  font-size: 30px;
+	letter-spacing: -.005em;
+	margin-top: .8em;
+	margin-bottom: .3em;
+  line-height: 1;
+	@media (min-width: $tablet) {
+    font-size: 40px;
+  }
+}
+h4 {
+  font-size: 26px;
+	letter-spacing: -.005em;
+	margin-bottom: 2em;
+  color: $midgrey;
+}
+p,
+.faq li,
+.data li {
+  font-size: 16px;
+	margin-bottom: 1.2em;
+	font-weight: 300;
+	letter-spacing: .014em;
+	@media (min-width: $tablet) {
+    font-size: 20px;
+  }
+}
+.faq li,
+.data li {
+  list-style-position: outside;
+  margin-left: 25px;
+  list-style-type: circle;
+}
+.data ul {
+  @media (min-width: $desktop) {
+    margin-left: -125px;
+    padding-left: 38%;
+  }
+  @media (min-width: 1420px) {
+    padding-right: 12%;
+  }
+}
+.schedule p {
+  @media (min-width: $tablet) {
+    font-size: 16px !important;
+    font-weight: 400;
+  	margin-bottom: .8em;
+    @media (min-width: $desktop) {
+      padding-left: 35%;
+      margin-left: -75px;
+      padding-right: 120px;
+      text-rendering: optimizeLegibility;
+    	-webkit-font-smoothing: antialiased;
+    	-moz-osx-font-smoothing: grayscale;
+    }
+  }
+}
+p.pre-head {
+  font-size: 14px;
+  margin-bottom: .3em;
+	font-weight: 500;
+	letter-spacing: -.007em;
+	@media (min-width: $tablet) {
+    font-size: 18px;
+    margin-bottom: .5em;
+  }
+}
+.where p {
+  color: $midgrey;
+	@media (min-width: $desktop) {
+  	text-rendering: optimizeLegibility;
+  	-webkit-font-smoothing: antialiased;
+  	-moz-osx-font-smoothing: grayscale;
+  }
+}
+.where strong {
+  font-weight: 500;
+  color: $textcol;
+}
+.schedule .pre-head {
+  margin-bottom: 0;
+  color: $midgrey;
+}
+.who p:first-child,
+.question p,
+.line-wrap {
+  font-size: 18px;
+	font-weight: 500;
+  line-height: 1.4;
+	letter-spacing: -.01em;
+	@media (min-width: $tablet) {
+    font-size: 26px;
+  }
+}
+.content h1,
+.content h2,
+.content h3,
+.content h4,
+.content p {
+  @media (min-width: $desktop) {
+    padding-left: 35%;
+    margin-left: -75px;
+    padding-right: 30px;
+  }
+}
+.data p {
+  @media (min-width: 1420px) {
+    padding-right: 12%;
+  }
+}
+.extra-pad h1,
+.extra-pad h2,
+.extra-pad h3,
+.extra-pad h4,
+.extra-pad p {
+  @media (min-width: $desktop) {
+    margin-left: -125px;
+    padding-left: 38%;
+  }
+}
+.full-width h1,
+.full-width h2,
+.full-width h3,
+.full-width h4,
+.full-width p {
+  text-align: left;
+  @media (min-width: $desktop) {
+    padding-left: 0;
+    margin-left: 0;
+  }
+}
+.schedule h2 {
+  @media (min-width: $desktop) {
+    padding-left: 35%;
+    margin-left: -75px;
+  }
+}
+.schedule h3 {
+  margin: 0;
+  color: $yellow;
+  @media (min-width: $desktop) {
+    padding-left: 35%;
+    margin-left: -75px;
+  }
+  &:after {
+    content: '';
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 30px;
+    background: $yellow;
+    top: 65px;
+    z-index: 10;
+    left: 0;
+    @media (min-width: $tablet) {
+      left: -44px;
+      top: 85px;
+    }
+    @media (min-width: $desktop) {
+      left: 321px;
+    }
+    @media (min-width: $desktop) and (max-width: 1150px) {
+      left: 271px;
+    }
+  }
+}
+.schedule-second h3 {
+  &:after {
+    top: 35px;
+    @media (min-width: $tablet) {
+      top: 45px;
+    }
+  }
+}
+.schedule-last h3 {
+  &:after {
+    top: 15px;
+    @media (min-width: $tablet) {
+      top: 22px;
+    }
+  }
+}
+
+/* Hero area */
+@import "hero";
+
+
+/* About */
+.about-wrap {
+  @media (min-width: $tablet) {
+    padding: 0 25px;
+	}
+}
+.about {
+  background: $blue;
+  @media (min-width: $tablet) {
+		margin: 0 auto;
+    max-width: 1200px;
+	}
+}
+.button-wrap {
+  height: 0;
+}
+.button {
+  background: $yellow;
+  border: 0;
+  text-transform: uppercase;
+  font-size: 15px;
+  letter-spacing: .15em;
+  color: $textcol;
+  padding: 15px 15px 15px 30px;
+  text-align: left;
+  position: relative;
+  cursor: pointer;
+  font-weight: 400;
+  transition: background .2s, padding .3s;
+  width: 100%;
+  text-decoration: none;
+  display: block;
+  svg {
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translate(0,-50%);
+  }
+  &:hover {
+    background: $textcol;
+    color: $yellow;
+    font-weight: 500;
+    padding-left: 45px;
+  }
+}
+.lt-ie10 .button svg,
+.lt-ie9 .button svg {
+  top: 25%;
+}
+.about .button {
+  transform: translate(0,-50%);
+	@media (min-width: $tablet) {
+    margin-right: -25px;
+    float: right;
+    width: 45%;
+  }
+	@media (min-width: $desktop) {
+    width: 40%;
+  }
+}
+.but-white {
+  background: #fff;
+  border: 1px solid $textcol;
+  margin: .4em 0 0;
+}
+.but-big {
+  margin: .4em 0 0;
+  padding: 28px 30px;
+  text-align: center;
+  font-family: $gotham;
+  letter-spacing: .01em;
+  font-size: 30px;
+  margin-top: 30px;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+  @media (min-width: $tablet) {
+    padding: 32px 30px;
+    margin-top: 50px;
+  }
+  &:hover {
+    padding-left: 30px;
+  }
+}
+.content {
+  padding: 0 15px;
+  @media (min-width: $tablet) {
+    padding: 0 75px;
+  }
+}
+.extra-pad {
+  @media (min-width: $desktop) {
+    padding: 0 100px 0 125px;
+  }
+}
+.bottom-pad {
+  padding-bottom: 90px;
+  @media (min-width: $tablet) {
+    padding-bottom: 110px;
+  }
+}
+.top-pad {
+  padding-top: 30px;  
+}
+.about-top {
+  padding: 160px 15px 0;
+  background: linear-gradient(
+      rgba(199, 237, 255, 0.85) 70%,
+      rgba(199, 237, 255, 1)
+    ),
+    url("../img/hands-typing.jpg") no-repeat 83% top;
+  background-size: cover;
+  @media (min-width: $tablet) {
+    padding: 280px 75px 0;
+    background: linear-gradient(
+        rgba(199, 237, 255, 0.85) 70%,
+        rgba(199, 237, 255, 1)
+      ),
+      url("../img/hands-typing.jpg") no-repeat left top;
+    background-size: cover;
+  }
+}
+.lt-ie10 .about-top,
+.lt-ie9 .about-top {
+  background: $blue url("../img/ie-bg-image.jpg") no-repeat left top;
+  background-size: cover;
+}
+.line-wrap {
+  @media (min-width: $desktop) {
+    position: relative;
+    overflow: hidden;
+  }
+  &:before {
+    @media (min-width: $desktop) {
+      content: '';
+      position: absolute;
+      right: 69%;
+      width: 999em;
+      height: 6px;
+      top: 8px;
+      background: $textcol;
+    }
+  }
+}
+.extra-pad .line-wrap:before {
+  @media (min-width: $desktop) {
+    right: 68.1%;
+  }
+}
+.full-width {
+  @media (min-width: $tablet) {
+    @include clearfix
+  }
+  @media (min-width: $tablet) and (max-width: 880px) {
+    margin: 0 -50px;
+  }
+}
+.half-width {
+  text-align: center;
+  @media (min-width: $tablet) {
+    width: 47%;
+    float: left;
+    margin-right: 6%;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+  path {
+    fill: $textcol;
+  }
+}
+.premier svg {
+  width: 191px;
+  height: 245px;
+  margin-top: 20px;
+}
+.academy svg {
+  width: 271px;
+  height: 186px;
+  margin: 59px 0 20px;
+}
+.data {
+  padding-top: 50px;
+}
+
+/* Schedule */
+.schedule {
+  background: $darkgrey;
+  color: #fff;
+  padding-bottom: 60px;
+}
+.schedule-outer {
+  padding: 0 15px;
+  @media (min-width: $tablet) {
+    padding: 0 75px;
+  }
+  @media (min-width: $desktop) {
+    padding: 0;
+  }
+  &:nth-child(3) {
+    background: $black;
+  }
+}
+.schedule-inner {
+  padding: 30px 0;
+  padding-left: 30px;
+  position: relative;
+  @media (min-width: $tablet) {
+    padding: 40px 0;
+  }
+  @media (min-width: $desktop) {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-left: 75px;
+    padding-right: 75px;
+  }
+  &:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: $midgrey;
+    z-index: 1;
+    left: 7px;
+    @media (min-width: $tablet) {
+      left: -37px;
+    }
+    @media (min-width: $desktop) {
+      left: 327px;
+    }
+    @media (min-width: $desktop) and (max-width: 1150px) {
+      left: 277px;
+    }
+  }
+}
+.schedule-middle {
+  padding-top: 0;
+  h3:after {
+    top: 15px;
+    @media (min-width: $tablet) {
+      top: 23px;
+    }
+  }
+}
+.schedule-first:after {
+  display: none;
+}
+.schedule-first {
+  padding-bottom: 0;
+}
+.schedule-second,
+.schedule-last {
+  padding-top: 0;
+}
+.schedule-second:after {
+  top: 45px;
+}
+.schedule-last:after {
+  height: 22px;
+}
+
+/* Where */
+.where {
+  margin: 75px 15px 0;
+  background: url("../img/where-academy.jpg") no-repeat 40% 365px;
+  background-size: auto 480px;
+  @media (min-width: $tablet) {
+    margin: 85px 25px 0;
+    background-size: 873px auto;
+    background-position: right 453px;
+  }
+  @media (min-width: $bigscreen) {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+.where-interior {
+  background: url("../img/where-interior.jpg") no-repeat 40% top;
+  background-size: auto 350px;
+  display: block;
+  width: 100%;
+  height: 350px;
+  margin-bottom: 410px;
+  @media (min-width: $tablet) {
+    background-size: 873px auto;
+    background-position: right;
+    height: 438px;
+    margin-bottom: 516px;
+  }
+  @media (min-width: $desktop) {
+    margin-bottom: 205px;
+  }
+}
+.where-text {
+  background: #fff;
+  width: 300px;
+  padding-right: 15px;
+  @media (min-width: $tablet) {
+  }
+  @media (min-width: $desktop) {
+  }
+}
+.where-text-outer {
+  @media (min-width: $tablet) {
+    padding: 0 30px 0 50px;
+    width: 400px;
+    background: #fff;
+  }
+  @media (min-width: $desktop) {
+    padding: 0 30px 0 85px;
+  }
+  @media (min-width: $bigscreen) {
+    width: 440px;
+  }
+}
+
+/* Who & FAQ */
+.who,
+.faq {
+  padding: 110px 15px 0;
+  @media (min-width: $tablet) {
+    padding: 100px 30px 0;
+  }
+  @media (min-width: $desktop) {
+    @include clearfix
+  }
+}
+.who-text-outer {
+  position: relative;
+  &:before {
+    @media (min-width: $tablet) {
+      z-index: -1;
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 445px;
+      height: 330px;
+      background: $blue;
+      @media (min-width: $desktop) {
+        height: 380px;
+        width: 500px;
+      }
+      @media (min-width: $bigscreen) {
+        width: 600px;
+      }
+    }
+  }
+}
+.who-text-outer,
+.faq-text-outer {
+  @media (min-width: $tablet) {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  @media (min-width: $desktop) {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  @media (min-width: $bigscreen) {
+    padding-left: 75px;
+    padding-right: 75px;
+  }
+}
+.who h1,
+.faq h1 {
+  padding-top: 50px;
+  @media (min-width: $desktop) {
+    width: 30%;
+    float: left;
+    margin-right: 5%;
+  }
+}
+.who-text,
+.faq-text {
+  @media (min-width: $desktop) {
+    margin-left: -75px;
+    float: left;
+    width: 65%;
+    padding-top: 95px;
+  }
+  @media (min-width: $desktop) and (max-width: 1100px) {
+    margin-left: 0;
+  }
+}
+.faq {
+  padding-bottom: 100px;
+}
+.faq-text {
+  @media (min-width: $desktop) {
+    margin-left: -75px;
+  }
+}
+.question {
+  cursor: pointer;
+  position: relative;
+  transition: color .2s;
+  @include clearfix
+}
+.question svg {
+  width: 12px;
+  height: 7px;
+  position: absolute;
+  left: 0;
+  top: 9px;
+  @media (min-width: $tablet) {
+    top: 14px;
+  }
+}
+.ansopen svg {
+  transform: rotate(180deg);
+}
+.question path {
+  fill: $textcol;
+}
+@media (min-width: $tablet) {
+  .question:hover {
+    color: $midgrey;
+  }
+}
+.question p {
+  margin-bottom: .8em;
+}
+.faq p,
+.faq ul,
+.faq ol {
+  padding-left: 25px;
+}
+.ans p:last-child {
+  padding-bottom: 15px;
+}
+.ans a {
+  color: $textcol;
+  &:hover {
+    text-decoration: none;
+  }
+}
+.qanda {
+  padding-bottom: 15px;
+}
+
+/* partners */
+.partners {
+  text-align: center;
+  @media (min-width: $tablet) {
+    padding: 0 25px 25px;
+  }
+}
+.partners-inner {
+  padding: 100px 0 135px;
+  /*border-top: 1px solid $stroke;*/
+  background: $lightgrey;
+  @media (min-width: $tablet) {
+    padding: 100px 0 150px;
+  }
+}
+.partners li {
+  display: inline-block;
+}
+.logos {
+  padding-bottom: 30px;
+}
+.logos li {
+  padding: 0 15px 80px;
+  @media (min-width: $tablet) {
+    padding: 0 30px 80px;
+  }
+}
+.opta img {
+  width: auto;
+  height: 42px;
+  @media (min-width: $tablet) {
+    height: 48px;
+  }
+}
+.premier-league img {
+  width: 123px;
+  height: auto;
+  @media (min-width: $tablet) {
+    width: 139px;
+  }
+}
+.sap img {
+  width: 85px;
+  height: 42px;
+  @media (min-width: $tablet) {
+    width: 95px;
+    height: 47px;
+  }
+}
+.chyronhego img {
+  width: 190px;
+  height: auto;
+  @media (min-width: $tablet) {
+    width: 265px;
+    margin-bottom: 3px;
+  }
+}
+.play svg {
+  width: 180px;
+  height: 44px;
+  @media (min-width: $tablet) {
+    width: 196px;
+    height: 48px;
+  }
+}
+
+/* Footer */
+footer {
+  background: $black;
+  padding-bottom: 40px;
+  border-top: 20px solid $yellow;
+  text-align: center;
+  @media (min-width: $tablet) {
+    border-top: 50px solid $yellow;
+    padding-bottom: 60px;
+  }
+}
+.footer-inner {
+  padding: 80px 15px 0;
+  @media (min-width: $desktop) {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 80px 75px 0;
+  }
+}
+.footer-inner h2 {
+  color: $yellow;
+  margin-bottom: 0;
+}
+.copy p {
+  font-size: 14px;
+  margin-top: 50px;
+  color: $midgrey;
+  margin: 0;
+  @media (min-width: $tablet) {
+    text-align: left;
+  }
+}
+.copy p a {
+  text-decoration: underline;
+  margin-left: 10px;
+  color: $midgrey;
+  &:hover {
+    text-decoration: none;
+  }
+}
+.footer-inner h2 + p {
+  color: #fff;
+  @media (min-width: $desktop) {
+  	text-rendering: optimizeLegibility;
+  	-webkit-font-smoothing: antialiased;
+  	-moz-osx-font-smoothing: grayscale;
+  }
+}
+.footer-inner .button {
+  width: 230px;
+  display: inline-block;
+  margin-top: 20px;
+  margin-bottom: 110px;
+  @media (min-width: $tablet) {
+    margin-bottom: 140px;
+    margin-top: 30px;
+  }
+  &:hover {
+    background: $lightgrey;
+    color: $textcol;
+    font-weight: 400;
+  }
+}
+.social {
+  padding-bottom: 50px;
+  @media (min-width: $tablet) {
+    padding-bottom: 0;
+    float: right;
+    margin-top: -10px;
+  }
+}
+.social li {
+  font-size: 30px;
+  display: inline-block;
+}
+.social a {
+  color: $midgrey;
+  text-decoration: none;
+  padding: 6px 10px;
+  margin: 0 10px;
+  @media (max-width: $iphone5) {
+    margin: 0 5px;
+  }
+}
+.social a:hover {
+  color: $lightgrey;
+}
+
+/* Plugin styles */
+
+
+/* Fonts */
+@import "fonts";
