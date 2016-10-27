@@ -174,10 +174,7 @@
 		display: inline;
 	}
 }
-/* Stats */
-.code-of-conduct .data-wrap {
-	margin-top: 150px;
-}
+/* Hero image */
 .hero-wrap {
 	max-width: 1250px;
 	margin: 0 auto;
@@ -191,7 +188,7 @@
       rgba(30, 30, 30, .3) 0%,
       rgba(0, 0, 0, .5) 40%
     ),
-    url("../img/fan-hack-image.jpg") no-repeat 18% top;
+    url("../img/fan-hack-image-6.jpg") no-repeat 18% top;
   background-size: cover;
 	.hero-lines {
 		background-image: url("../img/repeater.png");
@@ -203,7 +200,7 @@
 	      rgba(30, 30, 30, .3) 0%,
 	      rgba(0, 0, 0, .5) 40%
 	    ),
-	    url("../img/fan-hack-image.jpg") no-repeat left bottom;
+	    url("../img/fan-hack-image-6.jpg") no-repeat left bottom;
 	  background-size: cover;
   }
   @media (min-width: $desktop) {
@@ -211,7 +208,7 @@
 	      rgba(30, 30, 30, .3) 0%,
 	      rgba(0, 0, 0, .5) 40%
 	    ),
-	    url("../img/fan-hack-image.jpg") no-repeat left bottom;
+	    url("../img/fan-hack-image-6.jpg") no-repeat left bottom;
 	  background-size: cover;
   }
   .content {
@@ -228,6 +225,69 @@
 		@include clearfix;
 	}
 }
+
+/* Stats and Countdown Timer */
+.code-of-conduct .data-wrap {
+	margin-top: 150px;
+}
+.clockdiv {
+	font-family: $gotham;
+	font-size: 90px;
+  width: 100%;
+  padding: 111px 15px 60px;
+  margin: 0 auto;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+  @include clearfix;
+  @media (min-width: $tablet) {
+    font-size: 140px;
+    max-width: 1200px;
+    padding-top: 195px;
+    padding-bottom: 90px;
+  }
+  @media (min-width: $desktop) {
+    font-size: 160px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  .big-no {
+    letter-spacing: -.03em;
+  }
+  .clock-part {
+	  float: left;
+    width: 50%;
+    @media (min-width: $smtablet) {
+      border-right: $stroke 1px solid;
+    	text-align: center;
+      &:nth-child(1) {
+        width: 21%;
+      }
+      &:nth-child(2) {
+        width: 26%;
+      }
+      &:nth-child(3) {
+        width: 26%;
+      }
+      &:nth-child(4) {
+        border-right: 0;
+        width: 27%;
+      }
+    }
+  }
+  .smalltext {
+  	font-size: 18px;
+    color: $midgrey;
+    text-transform: uppercase;
+    margin-bottom: .9em;
+    margin-top: -.6em;
+    @media (min-width: $tablet) {
+      font-size: 20px;
+      padding-top: 5px;
+    }
+  }
+}
+
 #countdown {
 	font-family: $gotham;
 	font-size: 70px;

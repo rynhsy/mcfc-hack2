@@ -102,13 +102,90 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/img\/fan-hack-image.jpg": {
+	"\/img\/fan-hack-image-1.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1.86164e+06,
+		"inputAbbreviatedPath": "\/img\/fan-hack-image-1.jpg",
+		"outputAbbreviatedPath": "\/img\/fan-hack-image-1.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/fan-hack-image-2.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 532798,
+		"inputAbbreviatedPath": "\/img\/fan-hack-image-2.jpg",
+		"outputAbbreviatedPath": "\/img\/fan-hack-image-2.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/fan-hack-image-3.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 137989,
+		"inputAbbreviatedPath": "\/img\/fan-hack-image-3.jpg",
+		"outputAbbreviatedPath": "\/img\/fan-hack-image-3.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/fan-hack-image-4.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 633061,
+		"inputAbbreviatedPath": "\/img\/fan-hack-image-4.jpg",
+		"outputAbbreviatedPath": "\/img\/fan-hack-image-4.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/fan-hack-image-5.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 357368,
+		"inputAbbreviatedPath": "\/img\/fan-hack-image-5.jpg",
+		"outputAbbreviatedPath": "\/img\/fan-hack-image-5.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/fan-hack-image-6.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 349936,
+		"inputAbbreviatedPath": "\/img\/fan-hack-image-6.jpg",
+		"outputAbbreviatedPath": "\/img\/fan-hack-image-6.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/fan-hack-image-7.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 324356,
+		"inputAbbreviatedPath": "\/img\/fan-hack-image-7.jpg",
+		"outputAbbreviatedPath": "\/img\/fan-hack-image-7.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/fan-hack-image-8-no.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 475696,
-		"inputAbbreviatedPath": "\/img\/fan-hack-image.jpg",
-		"outputAbbreviatedPath": "\/img\/fan-hack-image.jpg",
+		"inputAbbreviatedPath": "\/img\/fan-hack-image-8-no.jpg",
+		"outputAbbreviatedPath": "\/img\/fan-hack-image-8-no.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -341,6 +418,15 @@
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
+		},
+	"\/player-performance-data-july-2016\/index.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/player-performance-data-july-2016\/index.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
 		},
 	"\/README.md": {
 		"criticStyle": 0,
