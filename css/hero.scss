@@ -28,8 +28,8 @@
 		transition: font-size .1s, padding .2s;
 		@media (min-width: $tablet) {
 		  font-size: 56px;
-			padding-top: 60px;
-    	margin-bottom: 1em;
+			padding-top: 45px;
+    	margin-bottom: 1.3em;
 		}
 	}
 	p {
@@ -45,6 +45,8 @@
   	-moz-osx-font-smoothing: grayscale;
 		@media (min-width: $tablet) {
       margin-bottom: 1.3em;
+			font-size: 16px;
+			line-height: 1.5;
     }
 		@media (max-width: 374px) {
 			font-size: 13px;
@@ -56,7 +58,7 @@
 		margin: 16px 8px 0 15px;
 		transition: margin-left .2s;
 		@media (min-width: $tablet) {
-			margin: 44px 12px 0 40px;
+			margin: 29px 12px 0 40px;
 		}
 	}
 	.location {
@@ -74,20 +76,10 @@
 			position: relative;
 			width: 27%;
       box-sizing: content-box;
-      padding: 62px 6px 0 0;
-			&:after {
-				content: ' ';
-				display: block;
-				position: absolute;
-				bottom: 0;
-				left: 0;
-				width: 999em;
-				height: 6px;
-				background: $black;
-			}
+      padding: 45px 6px 0 0;
 		}
 		@media (min-width: $desktop) {
-      padding: 62px 20px 0 0;
+      padding: 45px 20px 0 0;
     }
 	}
 	.button {
@@ -141,6 +133,10 @@
 			font-size: 46px;
 			padding-top: 23px;
 		}
+	}
+	p {
+		font-size: 15px;
+		line-height: 1.4;
 	}
 	.date-wrap {
 		display: none;
