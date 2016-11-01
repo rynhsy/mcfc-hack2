@@ -132,6 +132,61 @@ p,
     padding-right: 12%;
   }
 }
+ul.links {
+  padding: 0 15px;
+  @media (min-width: $tablet) {
+    padding: 0;
+  }
+  @media (min-width: $desktop) {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  @include clearfix;
+}
+.links li {
+  list-style: none;
+  margin: 10px 0 30px;
+  @media (min-width: $tablet) {
+    width: 50%;
+    box-sizing: border-box;
+    padding-right: 10px;
+    float: left;
+    &:nth-child(2) {
+      padding-left: 10px;
+      padding-right: 0;
+    }
+  }
+}
+.links img {
+  width: 100%;
+  transition: opacity .2s;
+  height: auto;
+}
+.links a {
+  display: block;
+  text-decoration: none;
+  @media (min-width: $desktop) {
+    &:hover img {
+      opacity: .8;
+    }
+  }
+}
+.links .link-text {
+	font-family: $gotham;
+	font-weight: 600;
+  font-size: 30px;
+	letter-spacing: -.005em;
+	margin-top: .3em;
+	margin-bottom: .4em;
+  line-height: 1;
+  display: block;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+.links .source {
+  display: block;
+}
 .schedule p {
   @media (min-width: $tablet) {
     font-size: 16px !important;
