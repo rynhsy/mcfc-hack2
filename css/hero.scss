@@ -129,6 +129,9 @@
 	h1 {
 		font-size: 32px;
 		padding-top: 20px;
+		@media (max-width: $iphone5) {
+			font-size: 27px;
+		}
 		@media (min-width: $tablet) {
 			font-size: 46px;
 			padding-top: 23px;

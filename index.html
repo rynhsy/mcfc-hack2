@@ -127,6 +127,7 @@
   </div><!-- .about -->
 </section><!-- .about-wrap -->
 
+<!--
 <section class="data-wrap">
   <div class="data bottom-pad">
     <div class="content extra-pad">
@@ -139,8 +140,8 @@
         <li>xxxxx</li>
       </ul>
     </div>
-  </div><!-- .data -->
-</section><!-- .data-wrap -->
+  </div>
+</section>-->
 
 <section class="schedule">
   <div class="schedule-outer">
@@ -196,6 +197,10 @@
 <section class="where">
   <div class="where-interior"></div>
   <div class="where-text-outer">
+
+    <script src="http://api.inspiredlabs.com/viewer.js">/* */</script>
+    <iframe id="viewer590126" scrolling="no" frameBorder="0" width="480" height="360" src="http://api.inspiredlabs.com/viewer?yaw=358%2E53&project=Manchester%2DCity%2FJoes%2DReshoot%2D247700401394343%2F2nd%2Dfloor%2Fmain&viewerId=viewer590126&bubble=day&embed=247700401684342&pitch=%2D5%2E87&width=480&location=loc001&height=360&fov=65"> </iframe>
+
     <div class="where-text">
       <h2>Where?</h2>
       <p>The event will take place at:</p>
@@ -503,7 +508,7 @@ function initializeClock(id, endtime) {
   var timeinterval = setInterval(updateClock, 1000);
 }
 
-var deadline = new Date(Date.parse(new Date(2017, 0, 27, 10, 0, 0)));
+var deadline = new Date(Date.parse(new Date(2017, 0, 23, 10, 0, 0)));
 initializeClock('countdown', deadline);
 </script>
 </body></html>
