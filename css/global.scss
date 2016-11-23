@@ -604,12 +604,8 @@ p.bottom-pad {
 /* Where */
 .where {
   margin: 75px 15px 0;
-  background: url("../img/where-academy.jpg") no-repeat 40% 365px;
-  background-size: auto 480px;
   @media (min-width: $tablet) {
     margin: 85px 25px 0;
-    background-size: 873px auto;
-    background-position: right 453px;
   }
   @media (min-width: $bigscreen) {
     max-width: 1200px;
@@ -617,21 +613,43 @@ p.bottom-pad {
     margin-right: auto;
   }
 }
+.frame-container {
+  position: relative;
+  right: 0;
+  height: 0;
+  overflow: hidden;
+  padding-bottom: 120%;
+  @media (min-width: $tablet) {
+    padding-bottom: 75%;
+  }
+  @media (min-width: $desktop) {
+    padding-bottom: 52%;
+  }
+  iframe {
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
 .where-interior {
-  background: url("../img/where-interior.jpg") no-repeat 40% top;
-  background-size: auto 350px;
+  background: url("../img/where-interior2.jpg") no-repeat 40% top;
+  background-size: auto 450px;
   display: block;
   width: 100%;
   height: 350px;
-  margin-bottom: 410px;
+  margin-bottom: 20px;
+  margin-top: 20px;
   @media (min-width: $tablet) {
-    background-size: 873px auto;
+    background-size: 100% auto;
     background-position: right;
-    height: 438px;
-    margin-bottom: 516px;
+    height: 550px;
+    margin-bottom: -167px;
   }
   @media (min-width: $desktop) {
-    margin-bottom: 205px;
+    height: 700px;
+    margin-bottom: -347px;
   }
 }
 .where-text {
