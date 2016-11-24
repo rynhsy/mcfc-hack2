@@ -634,7 +634,7 @@ p.bottom-pad {
   }
 }
 .where-interior {
-  background: url("../img/where-interior2.jpg") no-repeat 40% center;
+  background: url("../img/where-interior4.jpg") no-repeat 50% center;
   background-size: auto 450px;
   display: block;
   width: 100%;
@@ -642,14 +642,10 @@ p.bottom-pad {
   margin-bottom: 20px;
   margin-top: 20px;
   @media (min-width: $tablet) {
-    background-size: 100% auto;
-    background-position: right;
+    background-size: auto 100%;
+    background-position: center;
     height: 550px;
-    margin-bottom: -167px;
-  }
-  @media (min-width: $desktop) {
-    height: 700px;
-    margin-bottom: -347px;
+    margin-bottom: -203px;
   }
 }
 .where-text {

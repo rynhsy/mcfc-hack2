@@ -7,7 +7,7 @@
 		"uuidString": "1BB11353-4DF2-46FD-9DAE-0E7E549F2246"
 		}
 	],
-"creatorBuild": "25444",
+"creatorBuild": "25390",
 "files": {
 	"\/apply.html": {
 		"ft": 8192,
@@ -996,9 +996,6 @@
 	"babelModuleID": "",
 	"babelNoComments": 0,
 	"babelPlugins": {
-		"async-generator-functions": {
-			"active": 0
-			},
 		"async-to-generator": {
 			"active": 0
 			},
@@ -2087,10 +2084,6 @@
 			"active": 0,
 			"optionString": "{'ignoreDestructuring': false, 'ignoreImport': false, 'ignoreExport': false}"
 			},
-		"no-useless-return": {
-			"active": 0,
-			"optionString": ""
-			},
 		"no-var": {
 			"active": 0,
 			"optionString": ""
@@ -2158,6 +2151,10 @@
 		"prefer-numeric-literals": {
 			"active": 0,
 			"optionString": ""
+			},
+		"prefer-reflect": {
+			"active": 0,
+			"optionString": "{'exceptions': []}"
 			},
 		"prefer-rest-params": {
 			"active": 0,
